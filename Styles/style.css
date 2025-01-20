@@ -74,6 +74,9 @@ margin-right: 30px;
     border: none;
     background-color: rgba(254, 163, 1, 1);
 }
+.menu{
+    opacity: 0%;
+}
 
 /* Banner related styles */
 
@@ -116,4 +119,34 @@ margin-right: 30px;
     font-family: "Quicksand";
     font-size: 1.25rem ;
     font-weight: 700;
+}
+
+@media screen and (max-width:576px) {
+    .navbar{
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+    .nav-links,.nav-item,.school,.nav-btn{
+        display: none;
+    }
+    .nav-container{
+        justify-content: space-between;
+        padding: 12px 16px;
+        align-items: center;
+    }
+    .menu{
+        opacity: 100%;
+        padding:20px 16px ;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-container{
+        text-align: center;
+    }
+    .banner-image{
+        width: 100%;
+        align-items: center;
+    }
 }
