@@ -23,6 +23,7 @@ body {
 main {
     background-image: url('../assets/bg.png');
     background-repeat: repeat-y;
+    width: 100%;
 }
 
 /* Navbar related styles */
@@ -230,8 +231,41 @@ main {
     border: none;
     border-radius: 50px;
     background: rgba(254, 163, 1, 1);
+    
 
 
+}
+
+/* Our Story Section related Style */
+
+.container{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3 , 2fr);
+   gap:20px;
+
+}
+#box-1{
+    grid-row: span 2;
+}
+.story-card{
+    border-radius: 16px;
+    background: rgb(255, 255, 255); 
+  
+}
+.story-img-1{
+    border-radius: 16px;
+}
+.story-card-btn-1{
+    border-radius: 40px;
+background: rgb(60, 216, 232);
+border: none;
+
+ padding: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: -38px;
 }
 
 @media screen and (max-width:576px) {
@@ -270,5 +304,17 @@ main {
     .banner-image {
         width: 100%;
         align-items: center;
+    }
+    .box-card-container{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .section-title{
+        font-size: 1.5rem;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .arrow-btn{
+        display: none;
     }
 }
